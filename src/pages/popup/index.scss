@@ -12,6 +12,37 @@ body {
   position: relative;
 }
 
+.auth-section {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.status-text {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.small-text {
+  font-size: 11px;
+  color: #888;
+  margin-top: 8px;
+}
+
+.action-button {
+  background-color: #6366f1; // LiloChat color
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+
+  &:hover {
+    background-color: #4f46e5;
+  }
+}
+
 .header {
   font-size: 14px;
   padding: 10px 20px;

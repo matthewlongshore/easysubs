@@ -46,10 +46,10 @@ const manifest = {
       css: ["assets/css/contentStyle<KEY>.chunk.css"],
     },
   ],
-  permissions: ["scripting", "storage", "activeTab"],
+  permissions: ["scripting", "storage", "activeTab", "contextMenus"],
   optional_host_permissions: ["*://*/*"],
   optional_permissions: [],
-  host_permissions: ["https://translate.google.com/*", "http://localhost:8765/*", "https://api.lingualeo.com/*"],
+  host_permissions: ["https://translate.google.com/*", "http://localhost:3000/*", "https://lilochat.com/*"],
   content_security_policy: {
     extension_pages: "script-src 'self'; object-src 'self'",
   },

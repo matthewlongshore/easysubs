@@ -1,12 +1,8 @@
 {
-  "name": "easysubs",
-  "version": "3.0.3",
-  "description": "Browser extension for learning languages with watching movies and TV shows",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Nitrino/easysubs.git"
-  },
+  "name": "lilochat-chrome-extension",
+  "version": "1.0.1",
+  "description": "Browser extension for LiloChat for watching movies and TV shows",
+
   "scripts": {
     "build": "tsc --noEmit && vite build",
     "build:firefox": "tsc --noEmit && cross-env __FIREFOX__=true vite build",
@@ -20,7 +16,8 @@
     "commitlint": "commitlint --edit",
     "lint": "eslint src --ext .ts,.js,.tsx,.jsx",
     "lint:fix": "pnpm lint --fix",
-    "prettier": "prettier . --write"
+    "prettier": "prettier . --write",
+    "llm-ify": "node scripts/llm-ify.mjs"
   },
   "type": "module",
   "dependencies": {
