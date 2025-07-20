@@ -39,7 +39,7 @@ export const $translateLanguage = withPersist(createStore<string>(window.navigat
 export const translateLanguageChanged = createEvent<string>();
 export const translateLanguageChangeFx = createEffect<string, string>((value) => value);
 
-export const $learningService = withPersist(createStore<TLearningService>("disabled"));
+export const $learningService = withPersist(createStore<TLearningService>("lilochat"));
 export const learningServiceChanged = createEvent<TLearningService>();
 export const learningServiceChangeFx = createEffect<TLearningService, TLearningService>((value) => value);
 

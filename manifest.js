@@ -18,10 +18,10 @@ const manifest = {
   },
   action: {
     default_popup: "src/pages/popup/index.html",
-    default_icon: "icon-128.png",
+    default_icon: "lilochat-logo-sm.png",
   },
   icons: {
-    128: "icon-128.png",
+    128: "lilochat-logo-sm.png",
   },
   content_scripts: [
     {
@@ -55,7 +55,7 @@ const manifest = {
   },
   web_accessible_resources: [
     {
-      resources: ["assets/js/*.js", "assets/css/*.css", "icon-128.png", "icon-34.png"],
+      resources: ["assets/js/*.js", "assets/css/*.css", "lilochat-logo-sm.png", "lilochat-logo-symbol-sm.png"],
       matches: ["*://*/*"],
     },
   ],
