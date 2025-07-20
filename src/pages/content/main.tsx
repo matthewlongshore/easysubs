@@ -9,6 +9,7 @@ import { Settings } from "@src/pages/content/components/Settings";
 import { Subs } from "./components/Subs";
 import { ProgressBar } from "./components/ProgressBar";
 import { removeKeyboardEventsListeners } from "@src/utils/keyboardHandler";
+import { QuickAddModal } from "./components/QuickAddModal/QuickAddModal";
 
 refreshOnUpdate("pages/content");
 
@@ -65,5 +66,34 @@ esSubsChanged.watch((language) => {
     progressBarNode.classList.add("es-progress-bar");
     subsContainer?.appendChild(progressBarNode);
     createRoot(progressBarNode).render(<ProgressBar />);
+  }
+});
+
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message.type === "openQuickAddModal") {
+    // A unique ID for our modal's root element
+    const modalRootId = "es-quick-add-root";
+
+    // Avoid creating multiple modals
+    if (document.getElementById(modalRootId)) {
+      return;
+    }
+
+    // 1. Create a div to be the root for our React component
+    const modalRoot = document.createElement("div");
+    modalRoot.id = modalRootId;
+    document.body.appendChild(modalRoot);
+
+    // 2. Define a cleanup function to remove the modal
+    const unmountModal = () => {
+      const root = document.getElementById(modalRootId);
+      if (root) {
+        document.body.removeChild(root);
+      }
+    };
+
+    // 3. Render the React component into our new div
+    const root = createRoot(modalRoot);
+    root.render(<QuickAddModal word={message.text} onClose={unmountModal} />);
   }
 });

@@ -74,7 +74,7 @@ export type TWordTranslation = {
 
 export type TGoogleTranslation = unknown;
 
-export type TLearningService = "anki" | "lingualeo" | "puzzle-english" | "disabled";
+export type TLearningService = "anki" | "lilochat" | "disabled";
 
 export type Captions = subTitleType[];
 
