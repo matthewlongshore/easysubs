@@ -20,7 +20,7 @@
 
 ## v3.0.0 (25.06.2024) 🎉🎉🎉
 
-**The new Easysubs chapter!**
+**The new LiloChat chapter!**
 
 It's been a long journey of developing a new version and finally meet, a completely from scratch rewritten version. Hopefully all your favourite features are still in place and the annoying bugs are gone.
 
@@ -178,7 +178,7 @@ Starting from this version we support Chrome, Firefox, Opera and Yandex browsers
 ### Enhancements
 
 - Fix hosts permissions for non https urls
-- Unification Easysubs spelling
+- Unification LiloChat spelling
 - Fix youtube logo on landing for users with adblock
 - Update extension description
 

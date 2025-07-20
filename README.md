@@ -11,22 +11,22 @@ Browser extension to learn languages by watching movies and TV shows.
 
 The extension supports Chrome and Chrome-based browsers. It should also work in other browsers that have WebExtensions API support, but it hasn't been tested yet.
 
-**Release version available on [Chrome Web Store](https://chrome.google.com/webstore/detail/easysubs/ocelmccppkcibiflhhepafdjjomimddf?utm_source=github&utm_medium=social&utm_campaign=github)**
+**Release version available on [Chrome Web Store](https://chrome.google.com/webstore/detail/LiloChat/ocelmccppkcibiflhhepafdjjomimddf?utm_source=github&utm_medium=social&utm_campaign=github)**
 
-<a href="https://chrome.google.com/webstore/detail/easysubs/ocelmccppkcibiflhhepafdjjomimddf?utm_source=github&utm_medium=social&utm_campaign=github" target="_blank">
+<a href="https://chrome.google.com/webstore/detail/LiloChat/ocelmccppkcibiflhhepafdjjomimddf?utm_source=github&utm_medium=social&utm_campaign=github" target="_blank">
   <img src="./chrome-store.png" alt="chrome store" width="220px">
 </a>
 
 ## Build
 
 1. Install node 20+
-2. Clone repo `git clone git@github.com:Nitrino/easysubs.git`
-3. Go to folder and install dependencies `cd easysubs && pnpm i`
+2. Clone repo `git clone git@github.com:Nitrino/LiloChat.git`
+3. Go to folder and install dependencies `cd LiloChat && pnpm i`
 4. Build extension `pnpm build`
 
 ## Manual install
 
-1. Download and unzip [latest version](https://github.com/Nitrino/easysubs/releases)
+1. Download and unzip [latest version](https://github.com/Nitrino/LiloChat/releases)
 2. Open extensions page in browser:
    - For Chrome: `chrome://extensions/`
    - For Yandex browser: `browser://tune/`
@@ -107,6 +107,6 @@ You can also upload your own subtitles if they are not available on the video se
 ## Contributing
 
 We are open to community help.  
-To report a bug or feature offer, create [issue](https://github.com/Nitrino/easysubs/issues) and describe the question in detail.
+To report a bug or feature offer, create [issue](https://github.com/Nitrino/LiloChat/issues) and describe the question in detail.
 
-You can also implement the desired feature and send a [pull request](https://github.com/Nitrino/easysubs/pulls). We recommend discussing the feature in issues tracker before implementation. This will help reduce your time.
+You can also implement the desired feature and send a [pull request](https://github.com/Nitrino/LiloChat/pulls). We recommend discussing the feature in issues tracker before implementation. This will help reduce your time.

@@ -134,27 +134,6 @@ export const SubItemTranslation: FC<{ text: string }> = ({ text }) => {
             >
               <img src={cambridgeIcon} alt="cambridge dictionary" />
             </a>
-            <a
-              className="es-translation-service"
-              href={`https://forvo.com/search/${text.toLowerCase()}`}
-              target="_blank"
-            >
-              <img src={forvoIcon} alt="forvo" />
-            </a>
-            <a
-              className="es-translation-service"
-              href={`https://www.urbandictionary.com/define.php?term=${text.toLowerCase()}`}
-              target="_blank"
-            >
-              <img src={urbandictionaryIcon} alt="urban dictionary" />
-            </a>
-            <a
-              className="es-translation-service"
-              href={`https://youglish.com/pronounce/${text.toLowerCase()}/english`}
-              target="_blank"
-            >
-              <img src={youglishIcon} alt="youglish" />
-            </a>
           </div>
         </>
       )}

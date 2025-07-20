@@ -157,7 +157,7 @@ export const useClickOutside = (ref: RefObject<HTMLDivElement>, callback: () => 
 import ILearningService, { TAditionalData } from "./learningService";
 
 const ANKI_API_VERSION = 6;
-const ANKI_DESK = "Easysubs";
+const ANKI_DESK = "LiloChat";
 const ANKI_URL = "http://localhost:8765";
 
 export class Anki implements ILearningService {
@@ -1148,7 +1148,7 @@ reloadOnUpdate("pages/content/style.scss");
 console.log("background loaded");
 
 chrome.runtime.onInstalled.addListener(function (object) {
-  const onboardingUrl = "https://easysubs.cc/onboarding/";
+  const onboardingUrl = "https://LiloChat.cc/onboarding/";
   if (object.reason === chrome.runtime.OnInstalledReason.INSTALL) {
     chrome.tabs.create({ url: onboardingUrl });
   }
@@ -3062,15 +3062,15 @@ const Popup = () => {
 
   return (
     <div className="content">
-      <div className="header">Easysubs & LiloChat</div>
+      <div className="header">LiloChat & LiloChat</div>
       <div className="auth-section">
         {renderContent()}
       </div>
       <hr />
       <menu>
-        <li><a target="_blank" href="https://easysubs.cc" rel="noreferrer">Easysubs Home</a></li>
-        <li><a target="_blank" href="https://github.com/Nitrino/easysubs" rel="noreferrer">GitHub</a></li>
-        <li><a target="_blank" href="https://t.me/easysubs_ext" rel="noreferrer">Support Chat</a></li>
+        <li><a target="_blank" href="https://LiloChat.cc" rel="noreferrer">LiloChat Home</a></li>
+        <li><a target="_blank" href="https://github.com/Nitrino/LiloChat" rel="noreferrer">GitHub</a></li>
+        <li><a target="_blank" href="https://t.me/LiloChat_ext" rel="noreferrer">Support Chat</a></li>
       </menu>
     </div>
   );
@@ -3697,8 +3697,8 @@ class Netflix implements Service {
     setInterval(() => {
       const videoControlContainer = document.querySelector(".watch-video--bottom-controls-container");
       const subsContainer = document.querySelector(".watch-video--player-view");
-      const easysubsSettings = document.querySelector(".es-settings");
-      if (videoControlContainer && subsContainer && !easysubsSettings) {
+      const LiloChatSettings = document.querySelector(".es-settings");
+      if (videoControlContainer && subsContainer && !LiloChatSettings) {
         esRenderSetings();
         subsReloadRequested();
       }
@@ -3917,8 +3917,8 @@ class NetflixOnFlight implements Service {
     setInterval(() => {
       const videoControlContainer = document.querySelector(".watch-video--bottom-controls-container");
       const subsContainer = document.querySelector(".watch-video--player-view");
-      const easysubsSettings = document.querySelector(".es-settings");
-      if (videoControlContainer && subsContainer && !easysubsSettings) {
+      const LiloChatSettings = document.querySelector(".es-settings");
+      if (videoControlContainer && subsContainer && !LiloChatSettings) {
         esRenderSetings();
       }
     }, 100);
@@ -4014,8 +4014,8 @@ class Plex implements Service {
   constructor() {
     setInterval(() => {
       const subtitleContainer = document.querySelector(".libjass-subs");
-      const easysubsSettings = document.querySelector(".es-settings");
-      if (subtitleContainer && !easysubsSettings) {
+      const LiloChatSettings = document.querySelector(".es-settings");
+      if (subtitleContainer && !LiloChatSettings) {
         esRenderSetings();
       }
     }, 100);
