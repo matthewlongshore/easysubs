@@ -78,15 +78,15 @@ const Popup = () => {
 
   return (
     <div className="content">
-      <div className="header">Easysubs & LiloChat</div>
+      <div className="header">LiloChat Extension</div>
       <div className="auth-section">
         {renderContent()}
       </div>
       <hr />
+      {/* Navigation links to external resources */}
       <menu>
-        <li><a target="_blank" href="https://easysubs.cc" rel="noreferrer">Easysubs Home</a></li>
-        <li><a target="_blank" href="https://github.com/Nitrino/easysubs" rel="noreferrer">GitHub</a></li>
-        <li><a target="_blank" href="https://t.me/easysubs_ext" rel="noreferrer">Support Chat</a></li>
+        <li><a target="_blank" href="https://lilochat.com" rel="noreferrer">LiloChat</a></li>
+        {/* <li><a target="_blank" href="https://t.me/lilochat" rel="noreferrer">Support Chat</a></li> */}
       </menu>
     </div>
   );
