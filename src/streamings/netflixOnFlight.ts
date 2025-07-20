@@ -10,8 +10,8 @@ class NetflixOnFlight implements Service {
     setInterval(() => {
       const videoControlContainer = document.querySelector(".watch-video--bottom-controls-container");
       const subsContainer = document.querySelector(".watch-video--player-view");
-      const easysubsSettings = document.querySelector(".es-settings");
-      if (videoControlContainer && subsContainer && !easysubsSettings) {
+      const LiloChatSettings = document.querySelector(".es-settings");
+      if (videoControlContainer && subsContainer && !LiloChatSettings) {
         esRenderSetings();
       }
     }, 100);

@@ -9,8 +9,8 @@ class Plex implements Service {
   constructor() {
     setInterval(() => {
       const subtitleContainer = document.querySelector(".libjass-subs");
-      const easysubsSettings = document.querySelector(".es-settings");
-      if (subtitleContainer && !easysubsSettings) {
+      const LiloChatSettings = document.querySelector(".es-settings");
+      if (subtitleContainer && !LiloChatSettings) {
         esRenderSetings();
       }
     }, 100);
